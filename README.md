@@ -8,7 +8,8 @@ Discord mini-game bot created for educational purposes. Uses **slash commands**,
 * `final_bot.py` is a Discord bot implementation of the `blackjack` module.
 
 ## Usage
-* Edit `final_bot.py` and replace the empty token string with your bot token.
+* Edit `final_bot.py` and replace the empty token string with your bot token. **Do not share this
+  token with anyone!**
 * Run `final_bot.py`.
 
 ## Requirements
