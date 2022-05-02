@@ -1,5 +1,4 @@
-with open("C:/Users/Galaxy/Desktop/blackjack_bot_secret.txt") as f:
-    SECRET = f.read() # <- This is my secret key!
+SECRET = "" # <- Put your Discord bot authentication token here!
 
 import discord
 from blackjack import Blackjack, BlackjackResult
