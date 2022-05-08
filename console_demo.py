@@ -19,7 +19,8 @@ while not game.is_over():
             print("Invalid input. Try again!")
             selection = input(prompt).lower()
 
-result = game.get_result()
+game.play_dealer()
+result = game.get_outcome()
 print(f"== RESULT : {result.name} ==")
 print("Dealer cards:", *game.dealer.hand.cards, "| Value:", game.dealer.hand.get_optimal_value())
 print("Player cards:", *game.player.hand.cards, "| Value:", game.player.hand.get_optimal_value())
