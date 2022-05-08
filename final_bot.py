@@ -43,12 +43,6 @@ class BlackjackEmbed(discord.Embed):
             self.title = "Tie!"
             self.description = "Your bet was returned."
 
-    def show_timeout(self):
-        self.color = discord.Color.red()
-        self.title = "Game timed out"
-        self.description = "Game was not played in time. You lost (1x bet)."
-        self.clear_fields()
-
 class BlackjackView(discord.ui.View):
 
     def __init__(self, user):
@@ -122,4 +116,3 @@ bot.run(SECRET)
 # 5. Add buttons using discord.ui.View inside of the command function (buttons won't do anything)
 # 6. Bring it out to its own class and add button callbacks
 # 7. Prevent users from clicking on other people's games
-# 8. Add a timeout feature (it already does this, but it should say something when it times out)
