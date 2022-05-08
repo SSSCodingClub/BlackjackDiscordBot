@@ -1,4 +1,5 @@
 SECRET = "" # <- Put your Discord bot authentication token here!
+GUILD_ID = 000000000000000000 # <- Replace this with your server/guild ID
 
 import discord
 from blackjack import Blackjack, BlackjackResult
@@ -106,7 +107,7 @@ class BlackjackView(discord.ui.View):
 async def on_ready(): # Called when the bot is active
     print(f"We have logged in as {bot.user}")
 
-@bot.slash_command(name="blackjack", guild_ids=[855163549689446450])
+@bot.slash_command(name="blackjack", guild_ids=[GUILD_ID])
 async def start_game(ctx): # Called when a user does /blackjack
     view = BlackjackView(ctx.user)
     await ctx.respond(embed=view.embed, view=view) # Respond with a message
